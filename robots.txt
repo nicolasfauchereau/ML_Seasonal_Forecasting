@@ -1,0 +1,4 @@
+Sitemap: https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/sitemapindex.xml
+
+User-Agent: *
+Host: nicolasfauchereau.github.io

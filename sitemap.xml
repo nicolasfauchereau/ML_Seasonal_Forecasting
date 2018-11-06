@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/2018/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/archive.html</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/categories/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/galleries/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/listings/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/pages/about/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/posts/test/</loc>
+  <lastmod>2018-11-06T03:11:00Z</lastmod>
+ </url>
+</urlset>
