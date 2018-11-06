@@ -5,9 +5,9 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1541474928.562954
+_modified_time = 1541475052.3562932
 _enable_loop = True
-_template_filename = 'themes/foundation6/templates/index_helper.tmpl'
+_template_filename = '/Users/nicolasf/anaconda3/envs/blog/lib/python3.6/site-packages/nikola/data/themes/bootstrap4/templates/index_helper.tmpl'
 _template_uri = 'index_helper.tmpl'
 _source_encoding = 'utf-8'
 _exports = ['html_pager']
@@ -27,26 +27,26 @@ def render_body(context,**pageargs):
 def render_html_pager(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        nextlink = context.get('nextlink', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
+        nextlink = context.get('nextlink', UNDEFINED)
         prevlink = context.get('prevlink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
         if prevlink or nextlink:
-            __M_writer('\n        <div class="column row">\n            <ul class="pagination" role="navigation" aria-label="Pagination">\n')
+            __M_writer('        <ul class="pager postindexpager clearfix">\n')
             if prevlink:
-                __M_writer('                <li>\n                    <a href="')
+                __M_writer('            <li class="previous"><a href="')
                 __M_writer(str(prevlink))
-                __M_writer('" rel="prev">« <span class="show-for-sr">')
+                __M_writer('" rel="prev">')
                 __M_writer(str(messages("Newer posts")))
-                __M_writer('</span></a>\n                </li>\n')
+                __M_writer('</a></li>\n')
             if nextlink:
-                __M_writer('                <li>\n                    <a href="')
+                __M_writer('            <li class="next"><a href="')
                 __M_writer(str(nextlink))
-                __M_writer('" rel="next">» <span class="show-for-sr">')
+                __M_writer('" rel="next">')
                 __M_writer(str(messages("Older posts")))
-                __M_writer('</span></a>\n                </li>\n')
-            __M_writer('            </ul>\n        </div>\n')
+                __M_writer('</a></li>\n')
+            __M_writer('        </ul>\n')
         return ''
     finally:
         context.caller_stack._pop_frame()
@@ -54,6 +54,6 @@ def render_html_pager(context):
 
 """
 __M_BEGIN_METADATA
-{"filename": "themes/foundation6/templates/index_helper.tmpl", "uri": "index_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 20, "27": 2, "34": 2, "35": 3, "36": 4, "37": 7, "38": 8, "39": 9, "40": 9, "41": 9, "42": 9, "43": 12, "44": 13, "45": 14, "46": 14, "47": 14, "48": 14, "49": 17, "55": 49}}
+{"filename": "/Users/nicolasf/anaconda3/envs/blog/lib/python3.6/site-packages/nikola/data/themes/bootstrap4/templates/index_helper.tmpl", "uri": "index_helper.tmpl", "source_encoding": "utf-8", "line_map": {"16": 0, "21": 13, "27": 2, "34": 2, "35": 3, "36": 4, "37": 5, "38": 6, "39": 6, "40": 6, "41": 6, "42": 6, "43": 8, "44": 9, "45": 9, "46": 9, "47": 9, "48": 9, "49": 11, "55": 49}}
 __M_END_METADATA
 """
