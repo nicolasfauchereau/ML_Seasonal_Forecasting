@@ -83,16 +83,27 @@ navbar-dark bg-dark
 <p>The latest version of <a href="posts/setting-up-a-conda-environment-for-data-processing/">xarray</a> (Version 0.11) now can read grib files using <a href="posts/setting-up-a-conda-environment-for-data-processing/">cfgrib</a>. cfgrib itself depends on <a href="posts/setting-up-a-conda-environment-for-data-processing/">eccodes</a> which is available on the conda-forge channel. So if you do: </p>
 </li>
 </ul>
-<p><code>conda install -c conda-forge eccodes   
+<p><code>python
+  conda install -c conda-forge eccodes</code></p>
+<p>Then</p>
+<p><code>python
   pip install cfgrib</code></p>
 <p>you should be good to go. </p>
-<p>If xarray + cfgrib somehow doesnt read your grib files, there's a good chance <a href="posts/setting-up-a-conda-environment-for-data-processing/">pygrib</a> will, again you are in luck as it is available on the <em>conda-forge</em> channel, so <code>conda install -c conda-forge pygrib</code> will install pygrib, and you now have two options for reading your grib files. </p>
+<p>If xarray + cfgrib somehow doesn't read your grib files, there's a good chance <a href="https://github.com/jswhit/pygrib">pygrib</a>, written by <a href="https://www.esrl.noaa.gov/psd/people/jeffrey.s.whitaker/">Jeffrey Whitaker</a> will. Again you are in luck as it is available on the <em>conda-forge</em> channel, so <code>conda install -c conda-forge pygrib</code> will install pygrib, and you now have two options for reading your grib files. </p>
+<hr>
 <p>Below is the list of library we'll be using during the course of the project for all the data management and data processing tasks (i.e. excluding the Machine Learning aspect <em>per-se</em>): </p>
 <ul>
 <li>
 <a href="http://xarray.pydata.org">xarray</a> </li>
 <li>
 <a href="https://intake.readthedocs.io/en/latest/quickstart.html">intake</a> and <a href="https://github.com/ContinuumIO/intake-xarray">intake-xarray</a>
+</li>
+<li>
+<a href="https://github.com/jswhit/pygrib">pygrib</a> to read datasets available in grib format</li>
+<li>
+<a href="https://github.com/ecmwf/cfgrib">cfgrib</a> same thing ... </li>
+<li>
+<a href="https://pypi.org/project/cdsapi/">cdsapi</a> to download the seasonal forecasts made available on the <a href="https://cds.climate.copernicus.eu">Copernicus Climate Data Store</a>
 </li>
 </ul>
 </div>

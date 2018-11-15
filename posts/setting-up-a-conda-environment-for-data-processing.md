@@ -15,16 +15,26 @@ We are using the [anaconda](http://www.anaconda.com) Python distribution to inst
 
 + The latest version of [xarray]() (Version 0.11) now can read grib files using [cfgrib](). cfgrib itself depends on [eccodes]() which is available on the conda-forge channel. So if you do: 
 
-  ```
+  ```python
   conda install -c conda-forge eccodes   
-  pip install cfgrib 
+  ```
+
+  Then
+
+  ```python
+  pip install cfgrib   
   ```
 
   you should be good to go. 
 
-  If xarray + cfgrib somehow doesnt read your grib files, there's a good chance [pygrib]() will, again you are in luck as it is available on the *conda-forge* channel, so `conda install -c conda-forge pygrib` will install pygrib, and you now have two options for reading your grib files. 
+  If xarray + cfgrib somehow doesn't read your grib files, there's a good chance [pygrib](https://github.com/jswhit/pygrib), written by [Jeffrey Whitaker](https://www.esrl.noaa.gov/psd/people/jeffrey.s.whitaker/) will. Again you are in luck as it is available on the *conda-forge* channel, so `conda install -c conda-forge pygrib` will install pygrib, and you now have two options for reading your grib files. 
+
+----
 
 Below is the list of library we'll be using during the course of the project for all the data management and data processing tasks (i.e. excluding the Machine Learning aspect *per-se*): 
 
 + [xarray](http://xarray.pydata.org) 
 + [intake](https://intake.readthedocs.io/en/latest/quickstart.html) and [intake-xarray](https://github.com/ContinuumIO/intake-xarray)
++ [pygrib](https://github.com/jswhit/pygrib) to read datasets available in grib format
++ [cfgrib](https://github.com/ecmwf/cfgrib) same thing ... 
++ [cdsapi](https://pypi.org/project/cdsapi/) to download the seasonal forecasts made available on the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu)
