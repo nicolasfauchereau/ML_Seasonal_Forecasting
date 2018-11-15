@@ -1,0 +1,13 @@
+<p>We are using the <a href="">anaconda</a> Python distribution to install the libraries we need and manage our different computing environments. Here I want to share some tips: </p>
+<ul>
+<li>
+<p>A good idea is to <strong>never</strong> mix in the same environment libraries sourced from the <em>default</em> conda channel and <em>conda-forge</em>. I have battled in the past with broken environments, especially when trying to install geospatial python packages (such as geopandas, rasterio, shapely, gdal, etc) exactly for that reason. For a working 'geospatial' environment I found the best is to install <em>everything</em> from conda-forge (including the foundational packages such as Numpy, Scipy, Pandas etc)</p>
+</li>
+<li>
+<p>The latest version of <a href="">xarray</a> (Version 0.11) now can read grib files using <a href="">cfgrib</a>. cfgrib itself depends on <a href="">eccodes</a> which is available on the conda-forge channel. So if you do: </p>
+</li>
+</ul>
+<p><code>conda install -c conda-forge eccodes 
+  pip install cfgrib</code></p>
+<p>you should be good to go. </p>
+<p>If xarray + cfgrib somehow doesnt read your grib files, there's a good chance <a href="">pygrib</a> will, again you are in luck as it is available on the <em>conda-forge</em> channel, so <code>conda install -c conda-forge pygrib</code> will install pygrib, and you now have two options for reading your grib files. </p>

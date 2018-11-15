@@ -13,7 +13,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/test/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/setting-up-a-conda-environment-for-data-processing/" type="text/html">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -62,7 +62,34 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/test/" class="u-url">test</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/setting-up-a-conda-environment-for-data-processing/" class="u-url">setting up a conda environment for data processing</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Nicolas Fauchereau
+            </span></p>
+            <p class="dateline">
+            <a href="posts/setting-up-a-conda-environment-for-data-processing/" rel="bookmark">
+            <time class="published dt-published" datetime="2018-11-15T17:34:28+13:00" itemprop="datePublished" title="2018-11-15 17:34">2018-11-15 17:34</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>We are using the <a href="posts/setting-up-a-conda-environment-for-data-processing/">anaconda</a> Python distribution to install the libraries we need and manage our different computing environments. Here I want to share some tips: </p>
+<ul>
+<li>
+<p>A good idea is to <strong>never</strong> mix in the same environment libraries sourced from the <em>default</em> conda channel and <em>conda-forge</em>. I have battled in the past with broken environments, especially when trying to install geospatial python packages (such as geopandas, rasterio, shapely, gdal, etc) exactly for that reason. For a working 'geospatial' environment I found the best is to install <em>everything</em> from conda-forge (including the foundational packages such as Numpy, Scipy, Pandas etc)</p>
+</li>
+<li>
+<p>The latest version of <a href="posts/setting-up-a-conda-environment-for-data-processing/">xarray</a> (Version 0.11) now can read grib files using <a href="posts/setting-up-a-conda-environment-for-data-processing/">cfgrib</a>. cfgrib itself depends on <a href="posts/setting-up-a-conda-environment-for-data-processing/">eccodes</a> which is available on the conda-forge channel. So if you do: </p>
+</li>
+</ul>
+<p><code>conda install -c conda-forge eccodes 
+  pip install cfgrib</code></p>
+<p>you should be good to go. </p>
+<p>If xarray + cfgrib somehow doesnt read your grib files, there's a good chance <a href="posts/setting-up-a-conda-environment-for-data-processing/">pygrib</a> will, again you are in luck as it is available on the <em>conda-forge</em> channel, so <code>conda install -c conda-forge pygrib</code> will install pygrib, and you now have two options for reading your grib files. </p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/test/" class="u-url">test</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Nicolas Fauchereau
