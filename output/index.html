@@ -80,7 +80,7 @@ navbar-dark bg-dark
 <p>A good idea is to <strong>never</strong> mix in the same environment libraries sourced from the <em>default</em> conda channel and <em>conda-forge</em>. I have battled in the past with broken environments, especially when trying to install geospatial python packages (such as geopandas, rasterio, shapely, gdal, etc) exactly for that reason. For a working 'geospatial' environment I found the best is to install <em>everything</em> from conda-forge (including the foundational packages such as Numpy, Scipy, Pandas etc)</p>
 </li>
 <li>
-<p>The latest version of <a href="posts/setting-up-a-conda-environment-for-data-processing/">xarray</a> (Version 0.11) now can read grib files using <a href="posts/setting-up-a-conda-environment-for-data-processing/">cfgrib</a>. cfgrib itself depends on <a href="posts/setting-up-a-conda-environment-for-data-processing/">eccodes</a> which is available on the conda-forge channel. So if you do: </p>
+<p>The latest version of <a href="http://xarray.pydata.org">xarray</a> (Version 0.11) now can read grib files using <a href="https://github.com/ecmwf/cfgrib">cfgrib</a>. cfgrib itself depends on <a href="https://confluence.ecmwf.int/display/ECC">eccodes</a> which is available on the conda-forge channel. So if you do: </p>
 </li>
 </ul>
 <p><code>python

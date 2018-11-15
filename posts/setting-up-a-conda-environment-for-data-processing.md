@@ -13,7 +13,7 @@ We are using the [anaconda](http://www.anaconda.com) Python distribution to inst
 
 + A good idea is to **never** mix in the same environment libraries sourced from the *default* conda channel and *conda-forge*. I have battled in the past with broken environments, especially when trying to install geospatial python packages (such as geopandas, rasterio, shapely, gdal, etc) exactly for that reason. For a working 'geospatial' environment I found the best is to install *everything* from conda-forge (including the foundational packages such as Numpy, Scipy, Pandas etc)
 
-+ The latest version of [xarray]() (Version 0.11) now can read grib files using [cfgrib](). cfgrib itself depends on [eccodes]() which is available on the conda-forge channel. So if you do: 
++ The latest version of [xarray](http://xarray.pydata.org) (Version 0.11) now can read grib files using [cfgrib](https://github.com/ecmwf/cfgrib). cfgrib itself depends on [eccodes](https://confluence.ecmwf.int/display/ECC) which is available on the conda-forge channel. So if you do: 
 
   ```python
   conda install -c conda-forge eccodes   
