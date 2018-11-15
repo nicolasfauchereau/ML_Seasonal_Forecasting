@@ -9,17 +9,22 @@
 .. type: text
 -->
 
-We are using the [anaconda]() Python distribution to install the libraries we need and manage our different computing environments. Here I want to share some tips: 
+We are using the [anaconda](http://www.anaconda.com) Python distribution to install the libraries we need and manage our different computing environments. Here I want to share some tips: 
 
 + A good idea is to **never** mix in the same environment libraries sourced from the *default* conda channel and *conda-forge*. I have battled in the past with broken environments, especially when trying to install geospatial python packages (such as geopandas, rasterio, shapely, gdal, etc) exactly for that reason. For a working 'geospatial' environment I found the best is to install *everything* from conda-forge (including the foundational packages such as Numpy, Scipy, Pandas etc)
 
 + The latest version of [xarray]() (Version 0.11) now can read grib files using [cfgrib](). cfgrib itself depends on [eccodes]() which is available on the conda-forge channel. So if you do: 
 
   ```
-  conda install -c conda-forge eccodes 
+  conda install -c conda-forge eccodes   
   pip install cfgrib 
   ```
 
   you should be good to go. 
 
   If xarray + cfgrib somehow doesnt read your grib files, there's a good chance [pygrib]() will, again you are in luck as it is available on the *conda-forge* channel, so `conda install -c conda-forge pygrib` will install pygrib, and you now have two options for reading your grib files. 
+
+Below is the list of library we'll be using during the course of the project for all the data management and data processing tasks (i.e. excluding the Machine Learning aspect *per-se*): 
+
++ [xarray](http://xarray.pydata.org) 
++ [intake](https://intake.readthedocs.io/en/latest/quickstart.html) and [intake-xarray](https://github.com/ContinuumIO/intake-xarray)
