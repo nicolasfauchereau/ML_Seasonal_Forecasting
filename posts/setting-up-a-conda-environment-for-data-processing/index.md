@@ -1,8 +1,8 @@
 <!--
-.. title: setting up a conda environment for data processing
+.. title: Setting up a conda environment for data processing
 .. slug: setting-up-a-conda-environment-for-data-processing
 .. date: 2018-11-15 17:34:28 UTC+13:00
-.. tags: 
+.. tags: conda, grib
 .. category: 
 .. link: 
 .. description: 
