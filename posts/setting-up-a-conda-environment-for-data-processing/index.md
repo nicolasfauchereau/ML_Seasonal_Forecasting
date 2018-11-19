@@ -38,3 +38,4 @@ Below is the list of library we'll be using during the course of the project for
 + [pygrib](https://github.com/jswhit/pygrib) to read datasets available in grib format
 + [cfgrib](https://github.com/ecmwf/cfgrib) same thing ... 
 + [cdsapi](https://pypi.org/project/cdsapi/) to download the seasonal forecasts made available on the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu)
++ [aospy](https://github.com/spencerahill/aospy) for automated analysis and management of the models and ensemble forecast data
