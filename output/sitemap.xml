@@ -7,46 +7,38 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/</loc>
-  <lastmod>2018-11-06T03:11:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/2018/</loc>
-  <lastmod>2018-11-06T03:11:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/archive.html</loc>
-  <lastmod>2018-11-15T04:44:00Z</lastmod>
+  <lastmod>2018-12-20T01:31:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/categories/</loc>
-  <lastmod>2018-11-15T04:46:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/categories/conda/</loc>
-  <lastmod>2018-11-15T04:46:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/categories/grib/</loc>
-  <lastmod>2018-11-15T04:46:00Z</lastmod>
- </url>
- <url>
-  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/galleries/</loc>
-  <lastmod>2018-11-06T03:11:00Z</lastmod>
- </url>
- <url>
-  <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/listings/</loc>
-  <lastmod>2018-11-06T03:11:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/pages/about/</loc>
-  <lastmod>2018-11-06T03:11:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/posts/setting-up-a-conda-environment-for-data-processing/</loc>
-  <lastmod>2018-11-15T04:44:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
  <url>
   <loc>https://nicolasfauchereau.github.io/ML_Seasonal_Forecasting/posts/test/</loc>
-  <lastmod>2018-11-13T02:37:00Z</lastmod>
+  <lastmod>2018-12-20T01:30:00Z</lastmod>
  </url>
 </urlset>
